@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    card_view:cardCornerRadius="4dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="8dp"
+        android:background="@drawable/bg"
+        >
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/img_kitab"
+            android:layout_marginBottom="4dp"
+            tools:src="@color/colorDaun"/>
+        <TextView
+            android:layout_toRightOf="@id/img_kitab"
+            android:layout_toEndOf="@id/img_kitab"
+            android:id="@+id/tv_kitab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Kitab Qurrotul 'Uyun"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+        <TextView
+            android:layout_below="@id/tv_kitab"
+            android:layout_toRightOf="@id/img_kitab"
+            android:layout_toEndOf="@id/img_kitab"
+            android:id="@+id/tv_kategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Jenis Kitab"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+
+        <LinearLayout
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/img_kitab"
+            android:layout_toRightOf="@id/img_kitab"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_suka"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorDaun"
+                android:layout_marginRight="2dp"
+                android:text="@string/favorite"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_bagi"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorDaun"
+                android:layout_marginLeft="2dp"
+                android:text="@string/share"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
